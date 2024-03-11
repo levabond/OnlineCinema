@@ -12,7 +12,6 @@
 		255BCEFD2B9EB351001B9489 /* HomeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEFC2B9EB351001B9489 /* HomeIntent.swift */; };
 		255BCEFF2B9EB3C4001B9489 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEFE2B9EB3C4001B9489 /* HomeModel.swift */; };
 		255BCF012B9EB609001B9489 /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCF002B9EB609001B9489 /* HomeAssembler.swift */; };
-		255BCF042B9EBB4D001B9489 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCF032B9EBB4D001B9489 /* BottomBar.swift */; };
 		25AEF4A42B9973DD000CDA57 /* OnlineCinemaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AEF4A32B9973DD000CDA57 /* OnlineCinemaApp.swift */; };
 		25AEF4A82B9973E6000CDA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AEF4A72B9973E6000CDA57 /* Assets.xcassets */; };
 		25AEF4AB2B9973E6000CDA57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AEF4AA2B9973E6000CDA57 /* Preview Assets.xcassets */; };
@@ -44,7 +43,6 @@
 		255BCEFC2B9EB351001B9489 /* HomeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIntent.swift; sourceTree = "<group>"; };
 		255BCEFE2B9EB3C4001B9489 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		255BCF002B9EB609001B9489 /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
-		255BCF032B9EBB4D001B9489 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		25AEF4A02B9973DD000CDA57 /* OnlineCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AEF4A32B9973DD000CDA57 /* OnlineCinemaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCinemaApp.swift; sourceTree = "<group>"; };
 		25AEF4A72B9973E6000CDA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 		255BCEF52B9EB1E2001B9489 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				255BCF022B9EBB40001B9489 /* BottomBar */,
 				255BCEF62B9EB1ED001B9489 /* HomeView.swift */,
 				255BCEFC2B9EB351001B9489 /* HomeIntent.swift */,
 				255BCEFE2B9EB3C4001B9489 /* HomeModel.swift */,
@@ -115,14 +112,6 @@
 				255BCEF92B9EB2BD001B9489 /* MVIContainer.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		255BCF022B9EBB40001B9489 /* BottomBar */ = {
-			isa = PBXGroup;
-			children = (
-				255BCF032B9EBB4D001B9489 /* BottomBar.swift */,
-			);
-			path = BottomBar;
 			sourceTree = "<group>";
 		};
 		25AEF4972B9973DD000CDA57 = {
@@ -316,7 +305,6 @@
 				255BCF012B9EB609001B9489 /* HomeAssembler.swift in Sources */,
 				255BCEF72B9EB1ED001B9489 /* HomeView.swift in Sources */,
 				255BCEFD2B9EB351001B9489 /* HomeIntent.swift in Sources */,
-				255BCF042B9EBB4D001B9489 /* BottomBar.swift in Sources */,
 				255BCEFF2B9EB3C4001B9489 /* HomeModel.swift in Sources */,
 				255BCEFA2B9EB2BD001B9489 /* MVIContainer.swift in Sources */,
 			);

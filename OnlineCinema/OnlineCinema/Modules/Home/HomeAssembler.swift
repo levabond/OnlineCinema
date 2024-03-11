@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class HomeAssembler {
+final class HomeAssembler {
     static func build(data: HomeTypes.Intent.ExternalData) -> some View {
         let model = HomeModel()
         let intent = HomeIntent(model: model, externalData: data)
