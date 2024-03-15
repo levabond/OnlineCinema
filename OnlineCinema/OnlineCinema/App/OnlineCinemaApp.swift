@@ -11,7 +11,7 @@ import SwiftUI
 struct OnlineCinemaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeAssembler.build(data: .init(title: "Test"))
         }
     }
 }
