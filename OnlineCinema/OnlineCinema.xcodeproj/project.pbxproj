@@ -230,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25AEF4C72B9973E6000CDA57 /* Build configuration list for PBXNativeTarget "OnlineCinemaTests" */;
 			buildPhases = (
+				A63344802BA633F3001FE705 /* SwiftLint */,
 				25AEF4AC2B9973E6000CDA57 /* Sources */,
 				25AEF4AD2B9973E6000CDA57 /* Frameworks */,
 				25AEF4AE2B9973E6000CDA57 /* Resources */,
@@ -248,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25AEF4CA2B9973E6000CDA57 /* Build configuration list for PBXNativeTarget "OnlineCinemaUITests" */;
 			buildPhases = (
+				A63344812BA63408001FE705 /* SwiftLint */,
 				25AEF4B62B9973E6000CDA57 /* Sources */,
 				25AEF4B72B9973E6000CDA57 /* Frameworks */,
 				25AEF4B82B9973E6000CDA57 /* Resources */,
@@ -352,7 +354,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\n else\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --config ../.swiftlint.yml\n else\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A63344802BA633F3001FE705 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --config ../.swiftlint.yml\n else\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A63344812BA63408001FE705 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --config ../.swiftlint.yml\n else\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
