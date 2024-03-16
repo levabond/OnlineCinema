@@ -12,12 +12,18 @@
 		255BCEFD2B9EB351001B9489 /* HomeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEFC2B9EB351001B9489 /* HomeIntent.swift */; };
 		255BCEFF2B9EB3C4001B9489 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCEFE2B9EB3C4001B9489 /* HomeModel.swift */; };
 		255BCF012B9EB609001B9489 /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BCF002B9EB609001B9489 /* HomeAssembler.swift */; };
-		25AEF4A42B9973DD000CDA57 /* OnlineCinemaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AEF4A32B9973DD000CDA57 /* OnlineCinemaApp.swift */; };
 		25AEF4A82B9973E6000CDA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AEF4A72B9973E6000CDA57 /* Assets.xcassets */; };
 		25AEF4AB2B9973E6000CDA57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AEF4AA2B9973E6000CDA57 /* Preview Assets.xcassets */; };
 		25AEF4B52B9973E6000CDA57 /* OnlineCinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AEF4B42B9973E6000CDA57 /* OnlineCinemaTests.swift */; };
 		25AEF4BF2B9973E6000CDA57 /* OnlineCinemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AEF4BE2B9973E6000CDA57 /* OnlineCinemaUITests.swift */; };
 		25AEF4C12B9973E6000CDA57 /* OnlineCinemaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AEF4C02B9973E6000CDA57 /* OnlineCinemaUITestsLaunchTests.swift */; };
+		6A05878A2BA4254E009F16F0 /* OnlineCinemaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587892BA4254D009F16F0 /* OnlineCinemaApp.swift */; };
+		6A8FD56C2B9F0A6600715033 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FD5692B9F0A6600715033 /* Assembly.swift */; };
+		6A8FD56D2B9F0A6600715033 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FD56A2B9F0A6600715033 /* Container.swift */; };
+		6A8FD56E2B9F0A6600715033 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FD56B2B9F0A6600715033 /* Injectable.swift */; };
+		6A8FD5702B9F0C4800715033 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FD56F2B9F0C4800715033 /* Configuration.swift */; };
+		6A8FD5732B9F0CC500715033 /* ApplicationLevelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FD5722B9F0CC500715033 /* ApplicationLevelAssembly.swift */; };
+		6A8FD5752B9F0E7500715033 /* AplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FD5742B9F0E7500715033 /* AplicationConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +50,6 @@
 		255BCEFE2B9EB3C4001B9489 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		255BCF002B9EB609001B9489 /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
 		25AEF4A02B9973DD000CDA57 /* OnlineCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25AEF4A32B9973DD000CDA57 /* OnlineCinemaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCinemaApp.swift; sourceTree = "<group>"; };
 		25AEF4A72B9973E6000CDA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25AEF4AA2B9973E6000CDA57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25AEF4B02B9973E6000CDA57 /* OnlineCinemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineCinemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +57,13 @@
 		25AEF4BA2B9973E6000CDA57 /* OnlineCinemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineCinemaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AEF4BE2B9973E6000CDA57 /* OnlineCinemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCinemaUITests.swift; sourceTree = "<group>"; };
 		25AEF4C02B9973E6000CDA57 /* OnlineCinemaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCinemaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A0587892BA4254D009F16F0 /* OnlineCinemaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineCinemaApp.swift; sourceTree = "<group>"; };
+		6A8FD5692B9F0A6600715033 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		6A8FD56A2B9F0A6600715033 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		6A8FD56B2B9F0A6600715033 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		6A8FD56F2B9F0C4800715033 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		6A8FD5722B9F0CC500715033 /* ApplicationLevelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLevelAssembly.swift; sourceTree = "<group>"; };
+		6A8FD5742B9F0E7500715033 /* AplicationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AplicationConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +102,7 @@
 		255BCEF42B9EB1CD001B9489 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				25AEF4A32B9973DD000CDA57 /* OnlineCinemaApp.swift */,
+				6A0587892BA4254D009F16F0 /* OnlineCinemaApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -140,6 +152,7 @@
 				255BCEF82B9EB2A4001B9489 /* Utilities */,
 				255BCEF42B9EB1CD001B9489 /* App */,
 				255BCEF32B9EB1B6001B9489 /* Modules */,
+				6A8FD5712B9F0C7D00715033 /* ApplicationLayer */,
 				25AEF4A72B9973E6000CDA57 /* Assets.xcassets */,
 				25AEF4A92B9973E6000CDA57 /* Preview Content */,
 			);
@@ -169,6 +182,27 @@
 				25AEF4C02B9973E6000CDA57 /* OnlineCinemaUITestsLaunchTests.swift */,
 			);
 			path = OnlineCinemaUITests;
+			sourceTree = "<group>";
+		};
+		6A8FD5682B9F0A6600715033 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				6A8FD56F2B9F0C4800715033 /* Configuration.swift */,
+				6A8FD5692B9F0A6600715033 /* Assembly.swift */,
+				6A8FD56A2B9F0A6600715033 /* Container.swift */,
+				6A8FD56B2B9F0A6600715033 /* Injectable.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		6A8FD5712B9F0C7D00715033 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6A8FD5682B9F0A6600715033 /* DI */,
+				6A8FD5722B9F0CC500715033 /* ApplicationLevelAssembly.swift */,
+				6A8FD5742B9F0E7500715033 /* AplicationConfigurator.swift */,
+			);
+			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25AEF4A42B9973DD000CDA57 /* OnlineCinemaApp.swift in Sources */,
+				6A8FD5702B9F0C4800715033 /* Configuration.swift in Sources */,
+				6A8FD5732B9F0CC500715033 /* ApplicationLevelAssembly.swift in Sources */,
+				6A8FD56D2B9F0A6600715033 /* Container.swift in Sources */,
+				6A8FD56C2B9F0A6600715033 /* Assembly.swift in Sources */,
+				6A8FD56E2B9F0A6600715033 /* Injectable.swift in Sources */,
+				6A8FD5752B9F0E7500715033 /* AplicationConfigurator.swift in Sources */,
+				6A05878A2BA4254E009F16F0 /* OnlineCinemaApp.swift in Sources */,
 				255BCF012B9EB609001B9489 /* HomeAssembler.swift in Sources */,
 				255BCEF72B9EB1ED001B9489 /* HomeView.swift in Sources */,
 				255BCEFD2B9EB351001B9489 /* HomeIntent.swift in Sources */,
@@ -470,7 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OnlineCinema/Preview Content\"";
-				DEVELOPMENT_TEAM = 766XU9HKGX;
+				DEVELOPMENT_TEAM = U4CFHCYFQ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -499,7 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OnlineCinema/Preview Content\"";
-				DEVELOPMENT_TEAM = 766XU9HKGX;
+				DEVELOPMENT_TEAM = U4CFHCYFQ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
