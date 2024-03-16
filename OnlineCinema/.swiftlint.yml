@@ -1,0 +1,115 @@
+warning_threshold: 1
+
+disabled_rules: 
+  - closure_parameter_position
+  - trailing_comma
+  - trailing_whitespace
+  - todo
+  - comment_spacing
+  - inclusive_language
+  - void_function_in_ternary
+
+opt_in_rules:
+  - empty_count
+  - closure_body_length
+  - closure_spacing
+  - collection_alignment
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - convenience_type
+  - empty_string
+  - explicit_init
+  - extension_access_modifier
+  - fatal_error_message
+  - first_where
+  - flatmap_over_map_reduce
+  - identical_operands
+  - is_disjoint
+  - joined_default_parameter
+  - last_where
+  - legacy_multiple
+  - legacy_random
+  - let_var_whitespace
+  - lower_acl_than_parent
+  - modifier_order
+  - multiline_literal_brackets
+  - multiline_parameters
+  - operator_usage_whitespace
+  - overridden_super_call
+  - prefer_self_type_over_type_of_self
+  - prefixed_toplevel_constant
+  - private_action
+  - private_outlet
+  - reduce_into
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - static_operator
+  - strong_iboutlet
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - vertical_parameter_alignment_on_call
+  - vertical_whitespace_closing_braces
+
+analyzer_rules:
+  - explicit_self
+  - capture_variable
+  - typesafe_array_init
+  - unused_declaration
+  - unused_import
+
+    ## Rules
+
+empty_count:
+  severity: warning
+
+function_parameter_count:
+  warning: 8
+  error: 8
+
+cyclomatic_complexity:
+  warning: 10
+  error: 10
+  ignores_case_statements: true
+
+force_cast: error
+force_try:
+  severity: error
+
+line_length:
+  warning: 110
+  error: 150
+
+type_body_length:
+  warning: 300
+  error: 400
+
+file_length:
+  warning: 500
+  error: 1200
+  ignore_comment_only_lines: true
+
+type_name:
+  min_length: 4
+  max_length:
+    warning: 40
+    error: 50
+  excluded:
+    - T
+    - Key
+    - iPhone
+  allowed_symbols: ["_"]
+
+identifier_name:
+  min_length:
+    error: 4
+  max_length:
+    error: 35
+  excluded:
+    - app
+    - key
+    - id
+    - URL
+    - GlobalAPIKey
+reporter: "xcode"

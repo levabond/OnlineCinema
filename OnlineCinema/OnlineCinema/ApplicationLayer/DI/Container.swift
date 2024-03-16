@@ -5,7 +5,6 @@
 //  Created by Artem Kislitsyn on 11/03/2024.
 //  Copyright © 2024 Artem Kislitsyn. All rights reserved.
 
-
 struct Container {
 
 	let storage: Storage = .init()
@@ -18,14 +17,14 @@ struct Container {
 		return try component.make(with: self)
 	}
 
-	func register<T>(_ dependency: T.Type = T.self,
-					 named name: String? = nil,
-					 in scope: Scope = .unique,
-					 _ factory: @escaping (Container) throws -> T) rethrows {
-		let key = Key(object: ObjectIdentifier(dependency), name: name)
-		let resolver = Component(factory: factory, scope: scope, wrapper: scope.wrapper)
-		storage.append(entry: resolver, for: key)
-	}
+    func register<T>(_ dependency: T.Type = T.self,
+                     named name: String? = nil,
+                     in scope: Scope = .unique,
+                     _ factory: @escaping (Container) throws -> T) rethrows {
+        let key = Key(object: ObjectIdentifier(dependency), name: name)
+        let resolver = Component(factory: factory, scope: scope, wrapper: scope.wrapper)
+        storage.append(entry: resolver, for: key)
+    }
 
 	enum Errors: Error {
 		case noDependencyFor(Key)
@@ -75,21 +74,20 @@ extension Container {
 			self.wrapper = wrapper
 		}
 
-		func make(with container: Container) throws -> T {
-			switch scope {
-				case .unique:
-					return try factory(container)
-
-				case .graph, .shared:
-					if let instance = wrapper?.instance as? T {
-						return instance
-					} else {
-						let instance = try factory(container)
-						defer { wrapper?.instance = instance }
-						return instance
-				}
-			}
-		}
+        func make(with container: Container) throws -> T {
+            switch scope {
+            case .unique:
+                return try factory(container)
+            case .graph, .shared:
+                if let instance = wrapper?.instance as? T {
+                    return instance
+                } else {
+                    let instance = try factory(container)
+                    defer { wrapper?.instance = instance }
+                    return instance
+                }
+            }
+        }
 	}
 }
 
@@ -99,14 +97,14 @@ extension Container {
 		case graph
 		case shared
 
-		var wrapper: Instance? {
-			switch self {
-				case .unique: return nil
-				case .graph: return Graph()
-				case .shared: return Shared()
-			}
-		}
-	}
+        var wrapper: Instance? {
+            switch self {
+            case .unique: return nil
+            case .graph: return Graph()
+            case .shared: return Shared()
+            }
+        }
+    }
 }
 
 extension Container.Scope {

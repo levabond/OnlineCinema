@@ -34,7 +34,6 @@ final class HomeIntent {
         self.externalData = externalData
         self.model = model
     }
-
 }
 
 // MARK: - Public
@@ -44,9 +43,7 @@ extension HomeIntent: HomeIntentProtocol {
 
     func viewOnDisappear() {}
     
-    func didTapHandler() {
-        
-    }
+    func didTapHandler() {}
 }
 
 // MARK: - Helper classes
