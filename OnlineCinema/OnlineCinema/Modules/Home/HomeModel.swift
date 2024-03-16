@@ -9,8 +9,6 @@ import SwiftUI
 import Combine
 import AVKit
 
-protocol BottomBarItem {}
-
 // MARK: - View State
 /// Протокол для состояний. Отдаем его View
 protocol HomeModelStatePotocol {
@@ -30,8 +28,8 @@ final class HomeModel: ObservableObject, HomeModelStatePotocol {
 
     @Published var selectedIndex: Int = 0
     @Published var items: [BottomBarItem] = [
-//        BottomBarItem(icon: "house.fill", title: "Home", color: .purple),
-//        BottomBarItem(icon: "heart", title: "Likes", color: .pink)
+        BottomBarItem(icon: "house.fill", title: "Home", color: .purple),
+        BottomBarItem(icon: "heart", title: "Likes", color: .pink)
     ]
 }
 
