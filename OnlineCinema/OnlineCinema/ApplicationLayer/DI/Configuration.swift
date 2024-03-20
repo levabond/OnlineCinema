@@ -9,7 +9,6 @@ import Foundation
 
 protocol Configuration {
     var urlSessionConfiguration: URLSessionConfiguration { get }
-    
 }
 
 class DefaultAppConfig: Configuration {
@@ -17,5 +16,4 @@ class DefaultAppConfig: Configuration {
     var urlSessionConfiguration: URLSessionConfiguration {
         return .default
     }
-
 }

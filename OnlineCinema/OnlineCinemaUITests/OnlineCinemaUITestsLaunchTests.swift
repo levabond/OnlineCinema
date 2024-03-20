@@ -15,6 +15,7 @@ final class OnlineCinemaUITestsLaunchTests: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+        try super.setUpWithError()
     }
 
     func testLaunch() throws {

@@ -25,7 +25,7 @@ protocol HomeModelActionsProtocol: AnyObject {
 
 // MARK: - State Impl
 final class HomeModel: ObservableObject, HomeModelStatePotocol {
-    
+
     @Published var selectedIndex: Int = 0
     @Published var items: [BottomBarItem] = [
         BottomBarItem(icon: "house.fill", title: "Home", color: .purple),

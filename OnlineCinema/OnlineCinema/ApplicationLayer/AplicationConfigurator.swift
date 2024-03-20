@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class AplicationConfigurator {
     private var container: Container
     private let factories: [Assembly] = [
@@ -18,11 +17,8 @@ class AplicationConfigurator {
         self.container = container
         do {
             try factories.forEach { try $0.assemble(container: container) }
-
-                    
         } catch {
             print(error)
         }
-
     }
 }
